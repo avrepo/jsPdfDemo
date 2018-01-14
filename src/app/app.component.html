@@ -1,0 +1,25 @@
+<div id="pdf">
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items">
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button type="button" (click)="addContent()">Add more content</button>
+
+<br>
+<br>
+
+<button type="button" (click)="gneratePDF()">HTML to PDF</button>
